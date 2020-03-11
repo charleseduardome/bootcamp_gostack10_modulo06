@@ -9,13 +9,13 @@ const Stack = createStackNavigator();
 export default function Routes() {
   return (
     <Stack.Navigator
-      headerBackTitleVisible={false}
       headerLayoutPreset="center"
       screenOptions={{
         headerStyle: {
           backgroundColor: '#7159c1',
         },
         headerTintColor: '#FFF',
+        headerBackTitleVisible: false,
       }}
     >
       <Stack.Screen name="Main" component={Main} options={{ title: 'Main' }} />
